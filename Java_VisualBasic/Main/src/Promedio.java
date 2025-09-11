@@ -26,7 +26,6 @@ public class Promedio {
         System.out.println();
 
         // Eliminar sueldos menores a 1000 (< 1000) <--- Importante
-        // removeIf evita ConcurrentModificationException y es claro y conciso
         workers.removeIf(w -> w.getSueldo() < 1000);
 
         // Mostrar la lista actualizada
