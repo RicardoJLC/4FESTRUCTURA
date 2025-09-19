@@ -10,7 +10,7 @@ public class InvertirCadena {
 
     public static void main(String[] args) {
         String texto = "hola";
-        invertir(texto);         // salida: aloh
-        System.out.println();    // salto de línea al final
+        invertir(texto);         
+        System.out.println();    // <-- salto de línea al final
     }
 }
