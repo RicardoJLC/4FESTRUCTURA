@@ -22,21 +22,17 @@ public class App {
             numeros[i] = Integer.parseInt(sc.nextLine().trim());
         }
 
-        // Imprime el arreglo original
         System.out.println("\n=== ARREGLO ORIGINAL ===");
         Utils.imprimirArreglo(numeros);
 
-        // Divide números en pares e impares
         int[] pares = Utils.filtrarPares(numeros);
         int[] impares = Utils.filtrarImpares(numeros);
 
-        // Objeto para aplicar Selection Sort
         SelectionSort sorter = new SelectionSort(pares, impares);
 
         sorter.ordenarPares();
         sorter.ordenarImpares();
 
-        // Impresiones finales
         System.out.println("\n=== ARREGLOS ORDENADOS ===");
 
         System.out.print("Pares ordenados   : ");
@@ -47,4 +43,5 @@ public class App {
 
         sc.close();
     }
+
 }
